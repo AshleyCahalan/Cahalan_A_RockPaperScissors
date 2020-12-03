@@ -31,7 +31,7 @@ while gameVars.player == False:
 		print("tie")
 		#reset the game loop and have the user choose again
 
-	# --------- MOVE THIS CHUNK OF CODE TO A PACKAGE - START HERE
+	# --------- MOVE THIS CHUNK OF CODE BELOW TO A PACKAGE - START HERE
 
 	elif (computer == "rock"):
 		if (gameVars.player == "scissors"):
@@ -63,7 +63,7 @@ while gameVars.player == False:
 			# take a life away from the AI
 			gameVars.ai_lives -= 1
 
-	# ---------- STOP HERE - ALL ABOVE NEEDS TO BE MOVED
+	# ---------- STOP HERE - EVERYTHING ABOVE NEEDS TO BE MOVED
 
 	if gameVars.player_lives == 0:
 		chooseWinner.winorlose("lost")
