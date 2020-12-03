@@ -4,11 +4,11 @@ from gameComponents import gameVars
 def winorlose(status):
 	# print("inside winorlose function; status is: ", status)
 
-	print("You", status, "! Would you like to play again?")
+	print("You", status, "! Would you like to play again? :)")
 	choice = input("Y / N? ")
 
 	if choice == "N" or choice =="n":
-		print("You chose to quit! Better luck next time!")
+		print("Awww you chose to quit! Better luck next time! :(")
 		exit()
 
 	elif choice == "Y" or choice =="y":
@@ -20,6 +20,6 @@ def winorlose(status):
 		gameVars.player = False
 
 	else:
-		print("Make a valid choice - Y or N ")
+		print("Please make a valid choice - Y or N ")
 		# this will generate a bug that we need to fix later
 		choice = input("Y or N: ")
