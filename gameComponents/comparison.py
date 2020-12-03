@@ -1,5 +1,5 @@
 from gameComponents import gameVars
-from game import scissors
+from game import computer
 
 def comparison(status):
 
