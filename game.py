@@ -20,16 +20,22 @@ while gameVars.player == False:
 	# player = True -> it has a value (rock, paper or scissors)
 
 	# computer is our AI opponent - let it make a choice
-	computer = gameVars.choices[randint(0, 2)]
+	status = gameVars.choices[randint(0, 2)]
+
+
+
+	
 
 	# validate that the input worked
 	print("Player chose " + gameVars.player)
 	
-	print("AI chose: " + computer)
+	print("AI chose: " + status)
+
+
 
 
 	# here
-	comparison.comparison(gameVars.player)
+	comparison.comparison(status)
 	
 
 
